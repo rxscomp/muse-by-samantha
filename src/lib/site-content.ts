@@ -24,6 +24,19 @@ import cornerstoneOutside3 from "@/assets/projects/the-cornerstone/outside3.jpg"
 import cornerstoneOutside4 from "@/assets/projects/the-cornerstone/outside4.jpg";
 import cornerstoneOutside5 from "@/assets/projects/the-cornerstone/outside5.jpg";
 import cornerstoneOutside6 from "@/assets/projects/the-cornerstone/outside6.jpg";
+import gossamerBathroom from "@/assets/projects/the-gossamer-suite/bathroom.jpg";
+import gossamerBedroom from "@/assets/projects/the-gossamer-suite/bedroom.jpg";
+import gossamerBedroomEvening from "@/assets/projects/the-gossamer-suite/bedroom-evening.jpg";
+import gossamerMediaWall from "@/assets/projects/the-gossamer-suite/media-wall.jpg";
+import gossamerOverview from "@/assets/projects/the-gossamer-suite/suite-overview.jpg";
+import gossamerWardrobe from "@/assets/projects/the-gossamer-suite/wardrobe.jpg";
+import gossamerWardrobeLighting from "@/assets/projects/the-gossamer-suite/wardrobe-lighting.jpg";
+import annexBathroom from "@/assets/projects/the-annex/bathroom.jpg";
+import annexBedroom from "@/assets/projects/the-annex/bedroom.jpg";
+import annexBedroomStorage from "@/assets/projects/the-annex/bedroom-storage.jpg";
+import annexKitchenAndDining from "@/assets/projects/the-annex/kitchen-and-dining.jpg";
+import annexLivingArea from "@/assets/projects/the-annex/living-area.jpg";
+import annexLivingAreaEvening from "@/assets/projects/the-annex/living-area-evening.jpg";
 
 export const site = {
   name: "Muse Designs",
@@ -92,7 +105,9 @@ export type Project = {
     | "Modern Industrial Minimalism"
     | "Organic Contemporary Luxe"
     | "Organic Contemporary Luxury"
-    | "Organic Contemporary Outdoor Living";
+    | "Organic Contemporary Outdoor Living"
+    | "Warm Contemporary Luxury"
+    | "Contemporary Compact Minimalist Living";
 };
 
 export const projects: Project[] = [
@@ -201,6 +216,47 @@ export const projects: Project[] = [
     description:
       "The Veranda Grill blends contemporary design with rustic character. Natural stone textures, clean architectural lines, and durable materials create an outdoor retreat that feels elevated, welcoming, and built for memorable moments with family and friends.",
     status: "Modern Industrial Minimalism",
+  },
+  {
+    n: "008",
+    slug: "the-gossamer-suite",
+    title: "The Gossamer Suite",
+    location: "CocoWalk, Miami, FL",
+    type: "Bedroom Suite",
+    year: "2026",
+    img: gossamerBedroom,
+    images: [
+      gossamerBedroom,
+      gossamerMediaWall,
+      gossamerWardrobe,
+      gossamerBathroom,
+      gossamerBedroomEvening,
+      gossamerOverview,
+      gossamerWardrobeLighting,
+    ],
+    description:
+      "The Gossamer Suite blends contemporary elegance with warmth, understated luxury, and intentional details. Soft neutrals, marble-inspired finishes, and subtle gold accents create a refined atmosphere, while layered lighting and custom wardrobe systems enhance both comfort and functionality.",
+    status: "Warm Contemporary Luxury",
+  },
+  {
+    n: "009",
+    slug: "the-annex",
+    title: "The Annex",
+    location: "South Miami, Miami, Florida",
+    type: "Residential",
+    year: "2026",
+    img: annexKitchenAndDining,
+    images: [
+      annexKitchenAndDining,
+      annexLivingArea,
+      annexBedroom,
+      annexBedroomStorage,
+      annexBathroom,
+      annexLivingAreaEvening,
+    ],
+    description:
+      "The Annex redefines compact living through modern simplicity and thoughtful design. A refined neutral palette, marble-inspired finishes, and subtle accents create a cohesive, inviting atmosphere. With an efficient layout that maximizes functionality and comfort.",
+    status: "Contemporary Compact Minimalist Living",
   },
 ];
 

@@ -1,7 +1,8 @@
 import { createFileRoute, Link, Outlet, useRouterState } from "@tanstack/react-router";
 import { projects, site } from "@/lib/site-content";
 
-const galleryLocation = (location: string) => location.replace(/,?\s*Miami,\s*FL$/, "");
+const galleryLocation = (location: string) =>
+  location.replace(/,?\s*Miami,\s*(?:FL|Florida)$/, "");
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
