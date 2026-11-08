@@ -37,6 +37,10 @@ import annexBedroomStorage from "@/assets/projects/the-annex/bedroom-storage.jpg
 import annexKitchenAndDining from "@/assets/projects/the-annex/kitchen-and-dining.jpg";
 import annexLivingArea from "@/assets/projects/the-annex/living-area.jpg";
 import annexLivingAreaEvening from "@/assets/projects/the-annex/living-area-evening.jpg";
+import verveDiningRoom from "@/assets/projects/verve-estate/dining-room.jpg";
+import verveKitchenToLounge from "@/assets/projects/verve-estate/kitchen-to-lounge.jpg";
+import verveLivingRoomArchway from "@/assets/projects/verve-estate/living-room-archway.jpg";
+import verveWaterfallIsland from "@/assets/projects/verve-estate/waterfall-island.jpg";
 
 export const site = {
   name: "Muse Designs",
@@ -257,6 +261,19 @@ export const projects: Project[] = [
     description:
       "The Annex redefines compact living through modern simplicity and thoughtful design. A refined neutral palette, marble-inspired finishes, and subtle accents create a cohesive, inviting atmosphere. With an efficient layout that maximizes functionality and comfort.",
     status: "Contemporary Compact Minimalist Living",
+  },
+  {
+    n: "010",
+    slug: "verve-estate",
+    title: "Verve Estate",
+    location: "Doral, Miami, Florida",
+    type: "Residential",
+    year: "2026",
+    img: verveWaterfallIsland,
+    images: [verveWaterfallIsland, verveDiningRoom, verveLivingRoomArchway, verveKitchenToLounge],
+    description:
+      "Verve Estate embodies the harmony of organic warmth and contemporary sophistication. A sculptural archway creates a striking transition between the living and dining areas, while a statement waterfall island anchors the kitchen. Thoughtfully curated textures and interconnected living spaces bring character, comfort, and effortless elegance to everyday living.",
+    status: "Organic Contemporary Luxury",
   },
 ];
 
