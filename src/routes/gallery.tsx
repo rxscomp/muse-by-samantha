@@ -93,7 +93,14 @@ function Gallery() {
                           : "text-accent"
                       } ${compactMobileStudy ? "max-md:ml-auto max-md:max-w-32" : ""}`}
                     >
-                      {project.status}
+                      {project.status === "Warm Contemporary Luxury" ? (
+                        <>
+                          Warm Contemporary <br className="md:hidden" />
+                          Luxury
+                        </>
+                      ) : (
+                        project.status
+                      )}
                     </span>
                     <p className="mt-4 text-[10px] font-mono text-muted-foreground uppercase tracking-[0.18em] leading-relaxed md:hidden">
                       {shortLocation}
