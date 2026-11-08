@@ -49,6 +49,9 @@ function Gallery() {
         <div className="grid md:grid-cols-2 gap-x-12 gap-y-24">
           {projects.map((project, i) => {
             const shortLocation = galleryLocation(project.location);
+            const compactMobileStudy =
+              project.status === "Organic Contemporary Luxe" ||
+              project.status === "Timeless Modern Luxury";
 
             return (
               <Link
@@ -88,7 +91,7 @@ function Gallery() {
                         project.status === "Portfolio Study"
                           ? "text-muted-foreground"
                           : "text-accent"
-                      }`}
+                      } ${compactMobileStudy ? "max-md:ml-auto max-md:max-w-32" : ""}`}
                     >
                       {project.status}
                     </span>
